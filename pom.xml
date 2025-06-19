@@ -33,7 +33,7 @@
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
     <version>12</version>
-    <relativePath />
+    <relativePath/>
     <!-- no parent resolution -->
   </parent>
   <groupId>org.apache.hbase</groupId>
@@ -42,7 +42,7 @@
   <version>1.1.2.2.6.5.0-292</version>
   <name>Apache HBase</name>
   <description>
-    Apache HBase&#153; is the Hadoop database. Use it when you need
+    Apache HBase is the Hadoop database. Use it when you need
     random, realtime read/write access to your Big Data.
     This project's goal is the hosting of very large tables -- billions of rows X millions of columns -- atop clusters
     of commodity hardware.
@@ -670,7 +670,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -683,7 +683,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -696,7 +696,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                   <pluginExecution>
@@ -1048,7 +1048,7 @@
           <attributes>
             <docVersion>${project.version}</docVersion>
             <sourcedir>${project.build.sourceDirectory}</sourcedir>
-            <pdfmarks />
+            <pdfmarks/>
           </attributes>
         </configuration>
         <executions>
@@ -1074,9 +1074,9 @@
             <configuration>
               <backend>pdf</backend>
               <attributes>
-                <pagenums />
-                <toc />
-                <idprefix />
+                <pagenums/>
+                <toc/>
+                <idprefix/>
                 <idseparator>-</idseparator>
               </attributes>
             </configuration>
@@ -1094,8 +1094,8 @@
             <phase>post-site</phase>
             <configuration>
               <target name="rename file">
-                <move file="${project.basedir}/target/site/book.pdf" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdf" />
-                <move file="${project.basedir}/target/site/book.pdfmarks" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdfmarks" />
+                <move file="${project.basedir}/target/site/book.pdf" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdf"/>
+                <move file="${project.basedir}/target/site/book.pdfmarks" tofile="${project.basedir}/target/site/apache_hbase_reference_guide.pdfmarks"/>
               </target>
             </configuration>
             <goals>
@@ -1214,7 +1214,7 @@
     <jaxb-api.version>2.2.2</jaxb-api.version>
     <jetty.version>6.1.26.hwx</jetty.version>
     <jetty.jspapi.version>6.1.14</jetty.jspapi.version>
-    <jersey.version>1.9</jersey.version>
+    <jersey.version>1.13</jersey.version>
     <jmock-junit4.version>2.6.0</jmock-junit4.version>
     <jruby.version>1.6.8</jruby.version>
     <junit.version>4.12</junit.version>
@@ -1272,7 +1272,7 @@
     <surefire.testFailureIgnore>false</surefire.testFailureIgnore>
     <test.output.tofile>true</test.output.tofile>
     <surefire.timeout>7200</surefire.timeout>
-    <test.exclude.pattern />
+    <test.exclude.pattern/>
     <!-- default Xmx value is 2800m. Use -Dsurefire.Xmx=xxg to run tests with different JVM Xmx value -->
     <surefire.Xmx>2800m</surefire.Xmx>
     <surefire.cygwinXmx>2800m</surefire.cygwinXmx>
@@ -2397,7 +2397,7 @@
         <surefire.firstPartForkCount>1</surefire.firstPartForkCount>
         <surefire.skipFirstPart>false</surefire.skipFirstPart>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
-        <surefire.firstPartGroups />
+        <surefire.firstPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2411,7 +2411,7 @@
         <surefire.skipFirstPart>false</surefire.skipFirstPart>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.SmallTests</surefire.firstPartGroups>
-        <surefire.secondPartGroups />
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2424,7 +2424,7 @@
         <surefire.skipFirstPart>false</surefire.skipFirstPart>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.MediumTests</surefire.firstPartGroups>
-        <surefire.secondPartGroups />
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2437,7 +2437,7 @@
         <surefire.skipFirstPart>false</surefire.skipFirstPart>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.LargeTests</surefire.firstPartGroups>
-        <surefire.secondPartGroups />
+        <surefire.secondPartGroups/>
       </properties>
     </profile>
     <profile>
@@ -2481,7 +2481,7 @@
         <surefire.provider>surefire-junit4</surefire.provider>
         <surefire.skipFirstPart>false</surefire.skipFirstPart>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
-        <surefire.firstPartGroups />
+        <surefire.firstPartGroups/>
       </properties>
     </profile>
     <!-- Profile for running clover. You need to have a clover license under ~/.clover.license for ${clover.version}
